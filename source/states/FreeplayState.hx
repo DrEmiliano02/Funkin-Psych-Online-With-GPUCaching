@@ -216,6 +216,8 @@ class FreeplayState extends MusicBeatState
 		DiscordClient.changePresence("In the Menus", "Freeplay");
 		#end
 
+		Paths.clearUnusedMemory();
+
 		for (i in 0...WeekData.weeksList.length) {
 			if (weekIsLocked(WeekData.weeksList[i]))
 				continue;

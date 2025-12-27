@@ -271,6 +271,9 @@ class RoomState extends MusicBeatState /*#if interpret implements interpret.Inte
 		groupHUD = new FlxGroup();
 		groupHUD.cameras = [camHUD];
 
+		Paths.clearUnusedMemory();
+		Paths.clearStoredMemory();
+
 		// STAGE
 
 		if (online.backend.DateEvent.isHalloween) {

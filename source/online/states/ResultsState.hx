@@ -78,6 +78,9 @@ class ResultsState extends MusicBeatState {
 			return;
 		#end
 
+		Paths.clearUnusedMemory();
+		Paths.clearStoredMemory();
+
 		// var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('menuDesat'));
 		// bg.color = 0xff1f1f1f;
 		// bg.updateHitbox();
