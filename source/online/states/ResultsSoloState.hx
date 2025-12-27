@@ -68,6 +68,8 @@ class ResultsSoloState extends MusicBeatState {
 
 		FlxG.sound.destroy(true);
 
+		Paths.clearUnusedMemory();
+
 		Mods.loadTopMod();
 
 		data.character ??= 'bf';
