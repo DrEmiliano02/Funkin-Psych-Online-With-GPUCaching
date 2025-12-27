@@ -272,7 +272,6 @@ class RoomState extends MusicBeatState /*#if interpret implements interpret.Inte
 		groupHUD.cameras = [camHUD];
 
 		Paths.clearUnusedMemory();
-		Paths.clearStoredMemory();
 
 		// STAGE
 
