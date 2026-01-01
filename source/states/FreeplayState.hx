@@ -204,8 +204,7 @@ class FreeplayState extends MusicBeatState
 		FlxG.mouse.visible = false;
 		FlxG.autoPause = false;
 
-		//Paths.clearStoredMemory();
-		//Paths.clearUnusedMemory();
+		Paths.clearUnusedMemory();
 		
 		persistentUpdate = true;
 		PlayState.isStoryMode = false;
@@ -215,8 +214,6 @@ class FreeplayState extends MusicBeatState
 		// Updating Discord Rich Presence
 		DiscordClient.changePresence("In the Menus", "Freeplay");
 		#end
-
-		Paths.clearUnusedMemory();
 
 		for (i in 0...WeekData.weeksList.length) {
 			if (weekIsLocked(WeekData.weeksList[i]))
